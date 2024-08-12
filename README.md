@@ -5,12 +5,26 @@ This project is a NestJS template designed to provide a robust starting point fo
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Running the App](#running-the-app)
-- [Project Structure](#project-structure)
-- [Configuration](#configuration)
-- [Database](#database)
-- [Testing](#testing)
+- [NestJS Template Project](#nestjs-template-project)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Running the App](#running-the-app)
+  - [Environment Variables](#environment-variables)
+  - [Conventional Commits](#conventional-commits)
+    - [How to Commit](#how-to-commit)
+    - [Commit Types](#commit-types)
+  - [Project Structure](#project-structure)
+    - [Configuration Files](#configuration-files)
+    - [Source Files](#source-files)
+    - [Common Directory](#common-directory)
+    - [Configuration Directory](#configuration-directory)
+    - [Database Directory](#database-directory)
+    - [Main Entry Point](#main-entry-point)
+    - [Testing](#testing)
+  - [Database](#database)
+    - [Migrations](#migrations)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Installation
 
@@ -57,6 +71,37 @@ The application requires the following environment variables. Create a .env file
 - LOG_LEVELS: Comma-separated list of log levels (e.g., log,warn,error).
 - DATABASE_URL: The database connection string.
   
+
+## Conventional Commits
+
+This project uses Conventional Commits to maintain clear and consistent commit messages.
+
+### How to Commit
+
+- Use the following command to commit changes with an interactive prompt:
+
+  ```bash
+  pnpm commit
+  ```
+
+- You can also use:
+   ```bash
+   npx cz
+   ```
+
+### Commit Types
+
+Some common commit types include:
+
+- **`feat`**: A new feature
+- **`fix`**: A bug fix
+- **`docs`**: Documentation changes
+- **`style`**: Code style changes (formatting, missing semi-colons, etc.)
+- **`refactor`**: Code changes that neither fix a bug nor add a feature
+- **`test`**: Adding or updating tests
+- **`chore`**: Other changes that don't modify `src` or `test` files
+
+
 ## Project Structure
 
 ```plaintext
